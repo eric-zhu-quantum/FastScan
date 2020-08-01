@@ -1,29 +1,4 @@
 function varargout = FastScan_GPIB_v1(varargin)
-% FASTSCAN_GPIB_V1 MATLAB code for FastScan_GPIB_v1.fig
-%      FASTSCAN_GPIB_V1, by itself, creates a new FASTSCAN_GPIB_V1 or raises the existing
-%      singleton*.
-%
-%      H = FASTSCAN_GPIB_V1 returns the handle to a new FASTSCAN_GPIB_V1 or the handle to
-%      the existing singleton*.
-%
-%      FASTSCAN_GPIB_V1('CALLBACK',hObject,eventData,handles,...) calls the local
-%      function named CALLBACK in FASTSCAN_GPIB_V1.M with the given input arguments.
-%pwd
-%      FASTSCAN_GPIB_V1('Property','Value',...) creates a new FASTSCAN_GPIB_V1 or raises the
-%      existing singleton*.  Starting from the left, property value pairs are
-%      applied to the GUI before FastScan_GPIB_v1_OpeningFcn gets called.  An
-%      unrecognized property name or invalid value makes property application
-%      stop.  All inputs are passed to FastScan_GPIB_v1_OpeningFcn via varargin.
-%
-%      *See GUI Options on GUIDE's Tools menu.  Choose "GUI allows only one
-%      instance to run (singleton)".
-%
-% See also: GUIDE, GUIDATA, GUIHANDLES
-
-% Edit the above text to modify the response to help FastScan_GPIB_v1
-
-% Last Modified by GUIDE v2.5 26-Jul-2020 20:19:14
-
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
 gui_State = struct('gui_Name',       mfilename, ...
@@ -45,6 +20,7 @@ end
 %
 %
 %
+%some global variables:
 global wl_start_nm wl_stop_nm sweepspeed_nm Vmax TypeOfScan preambleBlock
 global AgScope
 global PreviousSaveDir
@@ -53,15 +29,7 @@ global PreviousSaveDir
 
 % --- Executes just before FastScan_GPIB_v1 is made visible.
 function FastScan_GPIB_v1_OpeningFcn(hObject, eventdata, handles, varargin)
-% This function has no output args, see OutputFcn.
-% hObject    handle to figure
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    structure with handles and user data (see GUIDATA)
-% varargin   command line arguments to FastScan_GPIB_v1 (see VARARGIN)
-
-% Choose default command line output for FastScan_GPIB_v1
 handles.output = hObject;
-
 % Update handles structure
 guidata(hObject, handles);
 %
@@ -75,11 +43,7 @@ AgScope.Timeout = 0.1;
 % Set the Byte order
 AgScope.ByteOrder = 'littleEndian';
 % Open the connection
-%
-% UIWAIT makes FastScan_GPIB_v1 wait for user response (see UIRESUME)
-% uiwait(handles.figure1);
-%
-addpath(genpath('C:\Users\Eric\Desktop\Eric\Dependencies'));
+addpath(genpath('C:\Users\Eric\Desktop\Eric\Dependencies')); % this needs to be changed nnnn
 
 
 
