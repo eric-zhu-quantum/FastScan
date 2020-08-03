@@ -43,7 +43,7 @@ function FastScan_GPIB_v1_OpeningFcn(hObject, eventdata, handles, varargin)
 	% Set the Byte order
 	AgScope.ByteOrder = 'littleEndian';
 	% Open the connection
-	addpath(genpath('C:\Users\Eric\Desktop\Eric\Dependencies')); % this needs to be changed nnnn
+	addpath(genpath([pwd,'/Dependencies/'])); % this needs to be changed nnnn
 
 
 
