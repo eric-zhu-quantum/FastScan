@@ -5,7 +5,7 @@ The GUI has been tested with an Agilent DS05032A 2-channel real-time digital sco
 
 Scope and laser mainframe were connected to computer via USB/VISA and GPIB, respectively.  
 
-Follow the Setup Guide to make the appropriate physical connections and modifications to the code to make it work with your experimental setup.  
+Follow the Setup Guide (https://github.com/eric-zhu-quantum/FastScan/blob/master/Setup%20Guide.pdf) to make the appropriate physical connections and modifications to the code to make it work with your experimental setup.  
 
 A video tutorial of the GUI can be found here:
 https://www.youtube.com/watch?v=dt3vIxepXd8
