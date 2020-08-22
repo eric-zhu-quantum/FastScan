@@ -35,7 +35,7 @@ function FastScan_GPIB_v1_OpeningFcn(hObject, eventdata, handles, varargin)
 	%
 	%
 	global AgScope TLS;
-	AgScope = visa('agilent','USB0::0x0957::0x1773::MY48020004::INSTR');
+	AgScope = visa('agilent','USB0::0x0957::0x1773::MY69696964::INSTR');
 	% Set the buffer size
 	AgScope.InputBufferSize = 100000;
 	% Set the timeout value
