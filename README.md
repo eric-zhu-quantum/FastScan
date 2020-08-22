@@ -1,3 +1,4 @@
+![alt text](https://github.com/eric-zhu-quantum/FastScan/blob/master/Thumbnail_FastScan.png)
 # FastScan
 I created this MATLAB-based GUI so that I could continually capture data from a fast-swept Keysight Tunable Laser.
 
