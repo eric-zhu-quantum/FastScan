@@ -161,7 +161,7 @@ function Vmax_CreateFcn(hObject, eventdata, handles)
 
 function LaserSource = OpenLaser()
     
-    LaserSource= gpib('agilent', 32, 20);
+    LaserSource= gpib('ni', 0, 20);  
     if  strcmp(LaserSource.Status, 'open')
         fclose(LaserSource);               
     end
